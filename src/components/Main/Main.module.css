@@ -1,0 +1,78 @@
+
+.main {
+    height: 100vh;
+    padding-top: 230px;
+}
+
+.wrapper {
+    max-width: 1400px;
+    /*border: 1px solid #fff;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px
+}
+
+.box_text {
+    /*border: 1px solid #fff;*/
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    justify-content: center;
+    padding: 0 50px
+}
+
+.h1 {
+    font-size: 39px;
+    /*border: 1px solid #fff;*/
+}
+
+.box_text p {
+    color: #c6c6c6;
+    font-size: 26px;
+    text-align: left;
+    letter-spacing: .05em;
+    /*border: 1px solid #fff;*/
+    padding: 30px 0
+}
+
+.box_img {
+    height: 600px;
+    width: 400px;
+    background-image: url('../../access/me.jpg');
+    background-size: cover;
+    background-position: -40px center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    animation: boxyRotation running ;
+    animation-duration: 2s;
+    box-shadow: 25px 25px 1px rgba(255, 255, 255, 0.44);
+    transition: 0.5s
+}
+.box_img:hover {
+    transform:scale(1.1)
+}
+
+
+@keyframes boxyRotation {
+    from {
+        transform: rotate(0deg)
+
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.videos {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+
