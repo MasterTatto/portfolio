@@ -1,14 +1,14 @@
 
 .header {
     /*border: 1px solid #fff;*/
-    background-color: rgba(67, 226, 255, 0);
+    /*background-color: rgba(67, 226, 255, 0);*/
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     padding: 25px 20px;
-    z-index: 1;
-
+    /*z-index: 1;*/
+    /*background-color: #333*/
 }
 
 .wrapper {

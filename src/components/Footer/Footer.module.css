@@ -1,0 +1,20 @@
+.footer {
+    height: 80px;
+    width: 100%;
+    background: rgb(108, 108, 108);
+    background: linear-gradient(0deg, rgba(108, 108, 108, 1) 52%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:0 30px
+}
+.left {
+
+    width: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+

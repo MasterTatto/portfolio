@@ -7,11 +7,10 @@ import Typist from "react-text-typist";
 
 const Main = () => {
     return (
-        <div className={s.main} >
-            <video autoPlay muted loop className={s.videos}>
-                <source src={video} type="video/mp4"/>
-            </video>
+        <div className={s.main}>
+            <div className={s.text}><h1>Обо мне</h1></div>
             <div className={s.wrapper}>
+
                 <div className={s.box_text}>
 
                     <Typist className={s.h1} sentences={['Привет , я Алекс!']} loop={false}> </Typist>
@@ -24,7 +23,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={s.hover_img}>
-                    <div className={s.box_img}> </div>
+                    <div className={s.box_img}></div>
                 </div>
 
             </div>

@@ -14,5 +14,32 @@ a {
 }
 
 .App {
+    /*min-height: 120vh;*/
+    /*z-index: 0;*/
+    /*overflow: hidden;*/
+/*overflow: hidden;*/
+    /*background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1615816388_56-p-fon-khaitek-70.jpg');*/
 }
 
+.main_wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+.videos {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    /*vertical-align: bottom*/
+}
+@media screen and (max-width: 575px) {
+
+}
