@@ -1,10 +1,14 @@
 import React from 'react';
 import s from './Main.module.css'
 import video from '../../access/bg-video.mp4'
-import {Button} from "@material-ui/core";
+import {Avatar, Button} from "@material-ui/core";
 import Typist from "react-text-typist";
+import img from '../../access/me.jpg'
 
-
+const style = {
+    height: '500px',
+    width: '500px'
+}
 const Main = () => {
     return (
         <div className={s.main}>
@@ -13,7 +17,7 @@ const Main = () => {
 
                 <div className={s.box_text}>
 
-                    <Typist className={s.h1} sentences={['Привет , я Алекс!']} loop={false}> </Typist>
+                    <h1 className={s.h1}> Привет , я Алекс!</h1>
                     <p>Я занимаюсь разработкой приложений на React более одного года и это мое портфолио, надеюсь оно
                         тебе понравится ;)
                     </p>
@@ -23,7 +27,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={s.hover_img}>
-                    <div className={s.box_img}></div>
+                    <img className={s.box_img} src={img} />
                 </div>
 
             </div>

@@ -1,13 +1,13 @@
 .footer {
-    height: 80px;
+    height: 10vh;
     width: 100%;
-    background: rgb(108, 108, 108);
-    background: linear-gradient(0deg, rgba(108, 108, 108, 1) 52%, rgba(0, 0, 0, 1) 100%);
+    /*background: rgb(108, 108, 108);*/
+    /*background: linear-gradient(0deg, rgba(108, 108, 108, 1) 52%, rgba(0, 0, 0, 1) 100%);*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding:0 30px
+
 }
 .left {
 

@@ -1,31 +1,17 @@
 
-.header {
-    /*border: 1px solid #fff;*/
-    /*background-color: rgba(67, 226, 255, 0);*/
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 25px 20px;
-    /*z-index: 1;*/
-    /*background-color: #333*/
-}
-
 .wrapper {
     max-width: 1400px;
-    /*border: 1px solid #fff;*/
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-
+    align-items: center;
+    height: 80px
 }
 
 .nav {
-    /*border: 1px solid #fff;*/
-    width: 600px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .a {
@@ -39,9 +25,8 @@
 }
 
 a:hover {
-    color: #fff;
+    color: red;
 }
-
 
 .a::after {
     position: absolute;
@@ -58,4 +43,44 @@ a:hover {
     width: 100%;
     left: 0;
 }
+
+@media screen and (max-width: 575px) {
+    .nav {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .a {
+        color: #cdcdcd;
+        font-size: 17px;
+        font-weight: 600;
+        font-style: italic;
+        /*margin-right: 30px;*/
+        position: relative;
+        transition: all .4s ease-in-out
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .a::after {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #2239d2;
+        left: 50%;
+        bottom: -10px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+}
+
 

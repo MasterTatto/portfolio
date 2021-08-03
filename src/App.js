@@ -18,8 +18,9 @@ function App() {
                 <Header/>
                 <Route render={() => <Main/>} path={'/main'}/>
                 <Route render={() => <Skills/>} path={'/skills'}/>
+                <Footer/>
             </div>
-            <Footer />
+
         </div>
     );
 }

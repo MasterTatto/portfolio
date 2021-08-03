@@ -1,38 +1,25 @@
-.skill {
-    height: 100vh;
-    margin: 0 auto;
-    top: 0;
-    /*background-color: #666;*/
-    padding: 70px 15px 0 15px;
-}
-.box_progress {
-    padding-top: 50px;
-
+.wrapper{
     display: flex;
+    justify-content:space-between;
     flex-wrap: wrap;
+    align-items:center;
+    padding-top: 50px;
 }
+
 .text {
-    width: 1400px;
-    margin: 0 auto;
     border-bottom: 6px solid #dddddd;
     border-radius: 5px;
     color: #919191;
     padding-bottom: 15px;
-    display: flex;
 }
 
 .text h1 {
     color: #919191;
     letter-spacing: .04em
 }
-
-.wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-top: 30px;
+.box_progress{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-
+    justify-content:space-between;
+    padding-bottom: 50px;
 }

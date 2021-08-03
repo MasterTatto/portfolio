@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
-
         <div className={s.header}>
             <div className={s.wrapper}>
                 <div className={s.nav}>

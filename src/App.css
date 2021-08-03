@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #fff
+    color:#fff
 }
 
 li {
@@ -24,8 +24,9 @@ a {
 .main_wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-
+    /*display: flex;*/
+    /*align-items: center;*/
+    padding:0 35px
 
 }
 
@@ -33,7 +34,7 @@ a {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height:100%;
+    height:122%;
     left: 50%;
     top: 50%;
     object-fit: cover;
@@ -41,5 +42,7 @@ a {
     /*vertical-align: bottom*/
 }
 @media screen and (max-width: 575px) {
-
+    .videos {
+        height: 140vh;
+    }
 }
