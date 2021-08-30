@@ -1,14 +1,21 @@
 .skill {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding:20px
+    /*justify-content: space-between;*/
+    /*justify-content: center;*/
+    align-items: center;
+    flex:.3;
+    transition: all .7s ease-in;
+}
+.skill:hover {
+    flex:1;
+    margin:0 20px
 }
 
 .name {
 
     text-align: center;
-    padding: 55px 0;
+    padding: 35px 0 35px 0;
     font-size: 36px;
     font-weight: 900;
 }
@@ -17,7 +24,7 @@
 
     font-size: 24px;
     max-width: 230px;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
 }
 
 .avatar {
@@ -25,10 +32,45 @@
     justify-content: center
 }
 
-.avatarI {
-    height: 100px;
-    width: 100px;
+
+
+
+@media screen and (max-width: 575px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 50px;
+        max-width: 100px;
+        align-items: center;
+        max-height:200px
+
+    }
+
+    .name {
+
+        text-align: center;
+        padding: 35px 0;
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .text {
+
+        font-size: 20px;
+        max-width: 230px;
+        padding-bottom: 40px;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+
+
 }
-.MuiLinearProgress-barColorPrimary {
-    background-color: #00f8ff;
-}
+

@@ -1,0 +1,19 @@
+.progress {
+    background: #2e344e;
+    display: block;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    border-radius:10px
+}
+
+.span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #037fff;
+    width: 80%;
+    transition: all 1s cubic-bezier(.01, .57, .68, 1.05) 0s;
+    border-radius:10px
+}

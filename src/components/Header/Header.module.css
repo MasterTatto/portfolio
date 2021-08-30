@@ -1,11 +1,15 @@
+.header {
+    /*background-color:#94ff74;*/
 
+}
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 80px
+    height: 80px;
+    border:1px solid
 }
 
 .nav {
@@ -25,7 +29,7 @@
 }
 
 a:hover {
-    color: red;
+    color: #fff;
 }
 
 .a::after {
@@ -38,16 +42,36 @@ a:hover {
     bottom: -10px;
     transition: all 0.4s ease-in-out;
 }
-
+.active::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #2239d2;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.4s ease-in-out;
+}
 .a:hover:after {
     width: 100%;
     left: 0;
 }
 
+.burger {
+    display: none
+}
+.active:after{
+    width: 100%;
+    left: 0;
+}
 @media screen and (max-width: 575px) {
+    .burger {
+        display: flex
+    }
+
     .nav {
         width: 350px;
-        display: flex;
+
         justify-content: space-between;
 
     }
@@ -62,9 +86,7 @@ a:hover {
         transition: all .4s ease-in-out
     }
 
-    a:hover {
-        color: red;
-    }
+
 
     .a::after {
         position: absolute;

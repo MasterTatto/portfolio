@@ -1,0 +1,20 @@
+.wrapper {
+    border: 1px solid green;
+    /*height: 200px;*/
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.project {
+    min-height:100vh;
+    border: 1px solid
+}
+
+@media screen and (max-width: 575px) {
+
+
+}
